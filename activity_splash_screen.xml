@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorProgress"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:src="@drawable/icon"
+                android:layout_below="@id/name"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="80dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:textColor="#FFF"
+                android:text="M e d i T a k e"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_pro"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@color/colorProgress"
+        android:layout_below="@+id/rel_top"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="false"
+                android:layout_marginLeft="80dp"
+                android:theme="@style/AppTheme.Pro"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
